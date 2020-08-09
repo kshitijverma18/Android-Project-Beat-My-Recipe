@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="report"
+        android:id="@+id/report_menu">
+    </item>
+    <item
+        android:title="delete post"
+        android:id="@+id/delete_post_menu"></item>
+
+</menu>

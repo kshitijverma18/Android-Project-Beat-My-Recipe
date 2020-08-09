@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Post_your_recipie">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/background_image">
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="Name your recipe"
+                        android:textSize="16dp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="12dp"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/recipe_name_xml"
+                        android:layout_height="wrap_content"
+                        android:hint="What's cooking?"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:textSize="16dp"
+                        android:layout_marginRight="12dp"></EditText>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add final mouth watering picture of your dish"
+                android:textSize="16dp"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_marginTop="12dp"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center">
+                    <ImageView
+                        android:layout_margin="12dp"
+                        android:layout_width="120dp"
+                        android:elevation="16dp"
+                        android:id="@+id/dish_newImage_xml"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:src="@drawable/post_add_picture">
+                    </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/timer_icon_xml"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/stopwatch">
+
+                </ImageView>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Preparation Time :"
+                android:layout_toRightOf="@+id/timer_icon_xml"
+                android:layout_marginLeft="12dp"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:layout_marginTop="12dp"></TextView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:elevation="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textColor="#000000"
+                    android:text="Hrs."></TextView>
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:textSize="16dp"
+                    android:id="@+id/hrs_xml"
+                    android:inputType="number">
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textColor="#000000"
+                    android:text="mins"></TextView>
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+
+                    android:id="@+id/mins_xml"
+                    android:inputType="number">
+
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. of servings"
+                android:layout_marginLeft="12dp"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_marginTop="12dp"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter no. of people it can serve"
+                android:layout_marginLeft="12dp"
+                android:inputType="number"
+                android:id="@+id/people_it_can_serve_xml"
+                android:textSize="16dp"></EditText>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Ingredients :"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="#000000"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp">
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ingredienst_linearLayout"
+                android:layout_marginLeft="12dp">
+                <EditText
+                    android:lineSpacingMultiplier="1.5"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:id="@+id/ingredients_editTextDisplay">
+                </EditText>
+
+            </LinearLayout>
+            <TextView
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/ingredients_textView"
+                android:text="1. FLour : 1/2 Cup"
+                >
+
+            </TextView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/add_ingredients_relative">
+
+                <EditText
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ex. Flour : 1/2 cup"
+                    android:textSize="16dp"
+                    android:layout_toLeftOf="@+id/ingredients_button"
+                    android:id="@+id/ingredients_editText">
+
+                </EditText>
+                <Button
+                    android:text="ADD"
+                    android:background="@drawable/post_button_drawable"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/ingredients_button"
+                    android:layout_alignParentRight="true"
+                    >
+
+                </Button>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/enter_ingredients_button_xml"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="#000000"
+                android:background="@drawable/post_button_drawable"
+                android:text="Click to Add Ingredients">
+            </Button>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Steps :"
+                android:layout_marginLeft="12dp"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_marginBottom="4dp"
+                android:textColor="#000000"
+                android:layout_marginTop="12dp">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/steps_linearLayout"
+                android:layout_marginLeft="12dp">
+                <EditText
+                    android:inputType="textMultiLine"
+                    android:lineSpacingMultiplier="1.5"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/transparent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/steps_editTextDisplay"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed-light">
+
+                </EditText>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/add_steps_relative">
+
+            <EditText
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:hint="1. Take one cup of flour and add water."
+                android:layout_toLeftOf="@+id/steps_button"
+                android:id="@+id/steps_editText">
+
+            </EditText>
+            <Button
+                android:text="ADD"
+                android:background="@drawable/post_button_drawable"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/steps_button"
+                android:layout_alignParentRight="true"
+                >
+
+            </Button>
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/post_button_drawable"
+                android:text="Click to add steps"
+                android:id="@+id/enter_steps_button_xml"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="#000000"
+
+                ></Button>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="#000000"
+                android:text="Chef's note"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/chef_note_xml"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:hint="People would love to hear from you"></EditText>
+
+            <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/spin_kit_newPost"
+                android:layout_marginTop="4dp"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/colorAccent" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click to review your post"
+                android:layout_marginTop="12dp"
+                android:id="@+id/review_post_xml"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/post_button_drawable"
+
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="#000000"></Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post"
+                android:layout_marginTop="12dp"
+
+                android:background="@drawable/post_button_drawable"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/post_xml"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="#000000"
+                android:layout_marginBottom="60dp"></Button>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Something smells delicious"
+                android:gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="#000000"
+                android:layout_marginBottom="12dp"></TextView>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

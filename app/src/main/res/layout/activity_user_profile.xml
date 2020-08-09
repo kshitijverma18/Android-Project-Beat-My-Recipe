@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".user_profile">
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:gravity="center">
+        <androidx.appcompat.widget.Toolbar
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_profile_toolbar"
+            android:background="#FFFFFF"
+            app:theme="@style/ToolbarTheme2" >
+
+        </androidx.appcompat.widget.Toolbar>
+        <com.github.florent37.shapeofview.shapes.ArcView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:elevation="4dp"
+            app:shape_arc_cropDirection="outside"
+            app:shape_arc_height="20dp"
+            android:background="@color/cardview_dark_background"
+            app:shape_arc_position="bottom"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_cooking"
+                 />
+
+
+
+
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/user_profile_image_yourprofile"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/select_profile_image"
+            app:riv_oval="true"
+            android:scaleType="fitCenter">
+
+        </com.makeramen.roundedimageview.RoundedImageView>
+        </com.github.florent37.shapeofview.shapes.ArcView>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/profile_name_userprofile"
+        android:text="Praknam Scube">
+
+    </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_marginTop="12dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+
+                android:src="@drawable/chef1title"></ImageView>
+
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kitchen Porter"></TextView>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bio"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine">
+        </TextView>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit your Profile"
+            android:textColor="#000000"
+            android:id="@+id/edit_profile_button"
+            android:fontFamily="sans-serif-condensed-light"
+            android:background="@drawable/post_button_drawable"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp">
+
+        </Button>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_profile_recyclerVIew"
+            android:background="#FFFFFF"
+            android:layout_marginTop="12dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+</ScrollView>

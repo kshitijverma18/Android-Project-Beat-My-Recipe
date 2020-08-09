@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    tools:context=".detailed_post_description">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        app:cardElevation="12dp"
+        android:padding="40dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/header2"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.Toolbar
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_post_description_toolbar"
+
+                app:theme="@style/ToolbarTheme2">
+
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="8dp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/post_composer_image_detail"
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/user_profile_icon"
+                        app:riv_oval="true"></com.makeramen.roundedimageview.RoundedImageView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/post_composer_name_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Praknam"
+                            android:textColor="#000000"
+                            android:layout_marginTop="10dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kitchen Porter">
+
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:id="@+id/dish_pic_post"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        app:layout_constraintDimensionRatio="1:1"
+                        tools:ignore="MissingConstraints"></ImageView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="10dp">
+
+                    <com.varunest.sparkbutton.SparkButton
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:id="@+id/dish_like_xml"
+                        app:sparkbutton_iconSize="24dp"
+
+                        app:sparkbutton_activeImage="@drawable/delicious_emoji"
+                        app:sparkbutton_inActiveImage="@drawable/delicious_emoji_transparent"
+                        android:src="@drawable/delicious_emoji_transparent"></com.varunest.sparkbutton.SparkButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20dp"
+                        android:id="@+id/dish_likesCount_xml"
+                        android:layout_toRightOf="@id/dish_like_xml"></TextView>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_toRightOf="@+id/dish_likesCount_xml"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/dish_comment_xml"
+                        android:src="@drawable/comment_icon_new_edited"></ImageView>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/share_post_xml"
+                        android:layout_toLeftOf="@+id/report_post_xml"
+                        android:src="@drawable/post_share"
+                        android:layout_marginRight="5dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20dp"
+                        android:id="@+id/dish_comment_count"
+                        android:layout_toRightOf="@id/dish_comment_xml"></TextView>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:id="@+id/report_post_xml"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/report_post"></ImageView>
+                </RelativeLayout>
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="18dp"
+            android:text="Chef's Note :"></TextView>
+        <TextView
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_marginTop="6dp"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_height="wrap_content"
+            android:id="@+id/chef_note_detailPost">
+
+        </TextView>
+
+
+            <TextView
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:inputType="textMultiLine"></TextView>
+        <TextView
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:id="@+id/ingredients_detailPost">
+
+        </TextView>
+
+
+        <TextView
+
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:text="Step by step instructions"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/steps_detailPost"
+            android:layout_marginTop="6dp"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_marginLeft="20dp"
+            android:inputType="textMultiLine">
+
+        </TextView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/post_button_drawable"
+            android:text="See chef's Profile">
+
+        </Button>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+</ScrollView>

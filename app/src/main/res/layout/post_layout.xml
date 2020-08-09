@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginTop="12dp"
+        android:id="@+id/progress_bar_postLayout">
+
+    </ProgressBar>
+
+    <androidx.cardview.widget.CardView
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="12dp"
+        android:padding="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user_profile_icon"
+                    android:id="@+id/post_composer_image_xml"
+                    app:riv_oval="true">
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/post_composer_image_xml"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Praknam"
+                        android:textColor="#000000"
+                        android:id="@+id/post_composer_name_xml"
+                        android:layout_marginTop="10dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chef_title_homeName"
+                        android:text="Kitchen Porter">
+                    </TextView>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/chef_title_homeImage"
+                    android:src="@drawable/chef1title"
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true">
+
+                </ImageView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <ImageView
+                    android:id="@+id/post_dish_image_xml"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintDimensionRatio="1:1"
+                    tools:ignore="MissingConstraints">
+                </ImageView>
+
+                <TextView
+                    android:elevation="12dp"
+                    android:shadowColor="#0E0E0E"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nurom_bold"
+                    android:text="BEAT MY RECIPE"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="@+id/post_dish_image_xml"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="6dp">
+
+                <com.varunest.sparkbutton.SparkButton
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/like_dish_xml"
+                    app:sparkbutton_iconSize="24dp"
+
+                    app:sparkbutton_activeImage="@drawable/delicious_emoji"
+                    app:sparkbutton_inActiveImage="@drawable/delicious_emoji_transparent"
+                    android:src="@drawable/delicious_emoji_transparent">
+                </com.varunest.sparkbutton.SparkButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/dish_likesCount_xml"
+                    android:layout_toRightOf="@id/like_dish_xml">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/dish_likesCount_xml"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/dish_comment_xml"
+                    android:src="@drawable/comment_icon_new_edited">
+                </ImageView>
+
+                <com.varunest.sparkbutton.SparkButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:sparkbutton_iconSize="24dp"
+                    android:id="@+id/favourites_button"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/report_post_xml"
+                    app:sparkbutton_activeImage="@drawable/your_fav"
+                    app:sparkbutton_inActiveImage="@drawable/your_fav_transparent">
+
+                </com.varunest.sparkbutton.SparkButton>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/dish_comment_count"
+                    android:layout_toRightOf="@id/dish_comment_xml">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/report_post_xml"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/report_post">
+                </ImageView>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/home_timestamp"
+                android:layout_marginBottom="5dp"
+                android:text="Now">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+
+
+
+
+

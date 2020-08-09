@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.example.kshitijverma.beat_my_recipie.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/top_of_the_world_fragment"
+        android:name="com.example.kshitijverma.beat_my_recipie.TopOfTheWorldFragment"
+        android:label="fragment_top_of_the_world"
+        tools:layout="@layout/fragment_top_of_the_world" />
+    <fragment
+        android:id="@+id/your_favourite"
+        android:name="com.example.kshitijverma.beat_my_recipie.Your_Favourites"
+        android:label="fragment_your__favourites"
+        tools:layout="@layout/fragment_your__favourites" />
+    <fragment
+        android:id="@+id/post_your_recipie"
+        android:name="com.example.kshitijverma.beat_my_recipie.Post_your_recipie"
+        android:label="fragment_post_your_recipie"
+        tools:layout="@layout/fragment_post_your_recipie" />
+    <fragment
+        android:id="@+id/sign_out"
+        android:name="com.example.kshitijverma.beat_my_recipie.SignoutFragment"
+        android:label="fragment_signout"
+        tools:layout="@layout/fragment_signout" />
+    <fragment
+        android:id="@+id/explore"
+        android:name="com.example.kshitijverma.beat_my_recipie.ExploreFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" />
+    <fragment
+        android:id="@+id/user_profile_xml_menu"
+        android:name="com.example.kshitijverma.beat_my_recipie.user_profile_fragment"
+        android:label="fragment_user_profile_fragment"
+        tools:layout="@layout/fragment_user_profile_fragment" />
+    <fragment
+        android:id="@+id/drafts"
+        android:name="com.example.kshitijverma.beat_my_recipie.DraftsFragment"
+        android:label="fragment_drafts"
+        tools:layout="@layout/fragment_drafts" />
+    <fragment
+        android:id="@+id/account_setings"
+        android:name="com.example.kshitijverma.beat_my_recipie.SetupAccountFragment"
+        android:label="fragment_setup_account"
+        tools:layout="@layout/fragment_setup_account" />
+
+</navigation>

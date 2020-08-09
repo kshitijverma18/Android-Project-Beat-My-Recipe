@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "612673560023",
+    "firebase_url": "https://beat-my-recipe.firebaseio.com",
+    "project_id": "beat-my-recipe",
+    "storage_bucket": "beat-my-recipe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612673560023:android:21c6d072b7cd69deff3f92",
+        "android_client_info": {
+          "package_name": "com.example.kshitijverma.beat_my_recipie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612673560023-1dkhgqqlr8odbnfl8gab5cbuo7q2u6th.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK6diUVJnwGM7MdrxDWdTraN8vXhOphrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612673560023-1dkhgqqlr8odbnfl8gab5cbuo7q2u6th.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

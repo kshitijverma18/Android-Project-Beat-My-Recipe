@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentsActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_toolbar_commentSection"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="center_vertical"
+        android:background="@color/cardview_dark_background"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_section_toolbar"
+            app:theme="@style/ToolbarTheme" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_toolbar_commentSection"
+        android:id="@+id/comment_activity_recyclerView_xml"
+        android:layout_above="@+id/bottom_addcomment">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_addcomment"
+        android:padding="5dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/user_profile_icon"
+            android:layout_centerVertical="true"
+            app:riv_oval="true"
+            android:id="@+id/profile_image_commentSection_xml">
+
+        </com.makeramen.roundedimageview.RoundedImageView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_image_commentSection_xml"
+            android:layout_marginLeft="6dp"
+            android:layout_toLeftOf="@+id/add_new_comment_textview_xml"
+            android:hint="Add Comment..."
+            android:id="@+id/add_comment_xml"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:id="@+id/add_new_comment_textview_xml"
+            android:layout_centerVertical="true"
+            android:text="Post"
+            android:layout_alignParentEnd="true">
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

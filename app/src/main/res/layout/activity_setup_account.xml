@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetupAccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:id="@+id/setupAccount_toolbar"
+            android:background="@drawable/header2"
+            app:theme="@style/ToolbarTheme2" >
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/setup_account_profile_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:scaleType="fitCenter"
+
+            android:layout_marginTop="20dp"
+            app:riv_oval="true"
+            android:src="@drawable/select_profile_image">
+
+        </com.makeramen.roundedimageview.RoundedImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Change profile picture">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="16sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-condensed-light">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your name"
+            android:id="@+id/name"
+            android:layout_marginRight="12sp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_marginLeft="12dp">
+        </EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="16sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-condensed-light">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:hint="Your User name"
+            android:layout_marginRight="12sp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_marginLeft="12dp">
+        </EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Website"
+            android:textSize="16sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-condensed-light">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="www.MyCookingWebsite.com"
+            android:id="@+id/website"
+            android:layout_marginRight="12sp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_marginLeft="12dp">
+        </EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chef's Bio"
+            android:textSize="16sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-condensed-light">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textMultiLine"
+            android:layout_height="wrap_content"
+            android:hint="Cooking is my passion"
+            android:id="@+id/bio"
+            android:layout_marginRight="12sp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_marginLeft="12dp">
+        </EditText>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Account"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/setup_account_button"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/post_button_drawable">
+        </Button>
+
+    </LinearLayout>
+
+
+</ScrollView>
